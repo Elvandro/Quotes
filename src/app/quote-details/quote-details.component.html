@@ -1,1 +1,9 @@
- 
+<div class="container">
+  <div class="row">
+    <i class="fa fa-thumbs-up" name="up" (click)="upVote()">{{inspiration.upVotes}}</i>
+    <i class="fa fa-thumbs-down"name="down" (click)="downVote()">{{inspiration.downVotes}}</i>
+  </div>
+  <div class="row">
+    <button class="btn btn-danger" (click)="eliminateQuote(true)">Delete this Quote</button>
+  </div>
+</div> 
