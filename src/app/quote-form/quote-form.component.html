@@ -1,4 +1,4 @@
-<form (ngSubmit)='submitInfo()' #quoteForm='ngForm'>
+<form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
   <div class="form-group">
     <label for="quote">Quote: </label>
     <input type="text" class="form-control" id="quote" [(ngModel)]="newQuote.quote" name="quote" #quote="ngModel" required>
@@ -22,14 +22,3 @@
   </div>
   <button type="submit" class="btn btn-success">Submit</button>
 </form>
-<div class="container">
-  <div class="row">
-    Authors name:{{newQuote.author}}
-  </div>
-  <div class="row">
-    Quote:{{newQuote.quote}}
-  </div>
-  <div class="row">
-    Submitted by:{{newQuote.person}}
-  </div>
-</div>

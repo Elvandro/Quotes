@@ -11,12 +11,12 @@ export class QuoteDetailsComponent implements OnInit {
   @Input() inspiration:Quote;
   @Output() complete = new EventEmitter<boolean>();
 
-  upvote(){
+  upVote(){
     this.inspiration.upVotes ++
-  }
+  };
   downVote(){
     this.inspiration.downVotes --
-  }
+  };
 
   deleteQuote(deleteIt:boolean){
     this.complete.emit(deleteIt);

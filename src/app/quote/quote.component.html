@@ -1,12 +1,11 @@
-<div class="panel-info">
-  <div class="panel-heading">
-    <app-quotes-form (addQuote)="createNewQuote($event)"></app-quotes-form>
-    <p>{{inspiration.quote}}<p>
-  </div>
-  <div class="panel-body">
-    <h2>{{inspiration.author}}</h2>
-  </div>
-  <div class="panel-footer">
-    <h2>{{inspiration.person}}</h2>
+<div class="container">
+  <app-quote-form (createQuote)="createNewQuote($event)"></app-quote-form>
+  <div class="row">
+    <div class="Jumbotron" *ngFor="let inspiration of quotes;let i= index">
+      <h3>{{inspiration.quote}}</h3>
+      <p>{{inspiration.author}}</p>
+      <p>{{inspiration.person}}</p>
+      <app-quote-details [inspiration]='inspiration' (complete)='eliminateQuote($event,i)'></app-quote-details>
+    </div>
   </div>
 </div>
