@@ -3,9 +3,9 @@ export class Quote {
     constructor(public quote:string,
       public author:string,
       public person:string,
-      public dateCreated:Date,
       public upVotes:number,
-      public downVotes:number){
+      public downVotes:number,
+      public dateCreated:Date){
         this.showDetails=false;
     }
 }
