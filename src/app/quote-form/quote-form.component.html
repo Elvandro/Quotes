@@ -7,7 +7,7 @@
     </div>
   </div>
   <div class="form-group">
-    <label for="name">Authors name: </label><br>
+    <label for="name">Author's name: </label><br>
     <input type="text" id="author" [(ngModel)]="newQuote.author" name="author" #author="ngModel" required>
     <div [hidden]="author.valid||author.pristine" class="alert alert-danger">
       <p>Required field</p>
@@ -26,6 +26,6 @@
     <div [hidden]="Date.valid||Date.pristine" class="alert alert-danger">
       <p>Required field</p>
     </div>
-  </div>
+  </div><br>
   <button type="submit" class="btn btn-success">Submit</button>
 </form>
