@@ -8,14 +8,14 @@ import { Quote } from '../quote';
 })
 export class QuoteDetailsComponent implements OnInit {
 
-  @Input() inspiration:Quote;
+  @Input() Quote:Quote;
   @Output() complete = new EventEmitter<boolean>();
 
   upVote(){
-    this.inspiration.upVotes ++
+    this.Quote.upVotes ++
   };
   downVote(){
-    this.inspiration.downVotes --
+    this.Quote.downVotes --
   };
 
   deleteQuote(deleteIt:boolean){
