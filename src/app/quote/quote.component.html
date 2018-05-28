@@ -4,7 +4,6 @@
     <h3>Quote: {{inspiration.quote}}</h3>
     <p>Author's name: {{inspiration.author}}</p>
     <p>Submitted by: {{inspiration.person}}</p>
-    <p>Created {{inspiration.dateCreated|timeCount}} days ago</p>
     <app-quote-details [inspiration]='inspiration' (complete)='eliminateQuote($event,i)'></app-quote-details>
   </div>
 </div>
