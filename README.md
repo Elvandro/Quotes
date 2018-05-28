@@ -8,10 +8,10 @@ This project was generated with [Angular CLI] (https://github.com/angular/angula
 
 ## Setup/Installation
  * For the application to run, you must have `node` and `Angular` installed on your local machine.
- * When all requirements are met one can clone the application from (https://github.com/Elvandro/Quotes.git) to your local machine. After cloning you can run the `ng serve --open` command which initiates an open server that allows you to view the application. If you wish to view how the application works you can view it at(https://elvandro.github.io/Quotes/).
+ * When all requirements are met one can clone the application from (https://github.com/Elvandro/Quotes.git) to your local machine. After cloning you can run the `ng serve --open` command which initiates an open server that allows you to view the application. If you first wish to view how the application works you can view it at(https://elvandro.github.io/Quotes/).
 
 ## Known Bugs
-* The application currently does not have bugs. If you come across any feel free to reach out to me through the email provided below.  
+* The application currently does not have any bugs. If you come across any feel free to reach out to me through the email provided below.  
 
 ## Specifications
 The following are the specifications for the application:
@@ -26,7 +26,7 @@ The following are the specifications for the application:
   * The date the Quote is submitted.
 
 ## Built Using
-* Angular and
+* Angular 6 and
 * Bootstrap
 
 ## Contact details
