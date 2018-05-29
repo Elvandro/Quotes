@@ -19,13 +19,13 @@ export class QuoteComponent implements OnInit {
     this.quotes.push(quote);
     console.log(this.quotes);
   }
-  eliminateQuote(complete,index){
+  deleteQuote(complete,index){
     if(complete){
       this.quotes.splice(index,1);
     }
   }
   toggleDetails(index){
-    this.quotes[index].displayQuotes = !this.quotes[index].displayQuotes;
+    this.quotes[index].showDetails = !this.quotes[index].showDetails;
   }
   constructor() { }
 
